@@ -3,9 +3,6 @@
 //
 #include "NimGame.h"
 
-class NimGame {
-public:
-    bool canWinNim(int n) {
-
-    }
+bool NimGame::canWinNim(int n) {
+    return n % 4 != 0;
 };

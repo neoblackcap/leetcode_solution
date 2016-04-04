@@ -5,6 +5,7 @@
 #ifndef LEETCODE_NIMGAME_H
 #define LEETCODE_NIMGAME_H
 class NimGame {
+public:
     bool canWinNim(int n);
 };
 

@@ -6,7 +6,7 @@
 
 using namespace std;
 
-vector<int>  CountingBitsSolution::countBits(int num) {
+vector<int> CountingBitsSolution::countBits(int num) {
     {
         vector<int> result;
         for (int i = 0; i <= num; ++i) {
