@@ -1,0 +1,18 @@
+//
+// Created by Neo Ko on 16/4/7.
+//
+#include "solution/MoveZeros.h"
+
+void MoveZeros::moveZeroes(vector<int> &nums) {
+    int count = 0;
+    for (auto it = nums.begin(); it != nums.end(); ++it) {
+        if (*it == 0) {
+            ++count;
+            nums.erase(it);
+        }
+    }
+    for (int i = 0; i < count; ++i) {
+        nums.push_back(0);
+    }
+
+}

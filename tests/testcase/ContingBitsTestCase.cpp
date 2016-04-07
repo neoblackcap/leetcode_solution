@@ -3,7 +3,7 @@
 //
 
 #include "gtest/gtest.h"
-#include "../../src/CountingBits.h"
+#include "solution/CountingBits.h"
 
 namespace std {
     TEST(CountingBitsTestCase, test_solution) {

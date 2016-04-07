@@ -3,7 +3,7 @@
 //
 
 #include <cstdio>
-#include "InvertBinaryTree.h"
+#include "solution/InvertBinaryTree.h"
 
 TreeNode *InvertBinaryTree::invertTree(TreeNode *root) {
     if (root == NULL) {

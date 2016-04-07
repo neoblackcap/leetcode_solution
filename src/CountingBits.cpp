@@ -2,7 +2,7 @@
 // Created by Neo Ko on 16/4/3.
 //
 
-#include "CountingBits.h"
+#include "solution/CountingBits.h"
 
 using namespace std;
 

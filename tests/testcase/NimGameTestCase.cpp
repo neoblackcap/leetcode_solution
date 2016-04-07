@@ -3,7 +3,7 @@
 //
 
 #include "gtest/gtest.h"
-#include "../../src/NimGame.h"
+#include "solution/NimGame.h"
 
 TEST(NimGameTestCase, test_solution) {
     NimGame* solution = new NimGame();

@@ -3,7 +3,7 @@
 //
 
 #include "gtest/gtest.h"
-#include "../../src/InvertBinaryTree.h"
+#include "solution/InvertBinaryTree.h"
 #include <deque>
 #include <initializer_list>
 
