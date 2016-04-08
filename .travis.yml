@@ -1,0 +1,15 @@
+language: cpp
+dist: trusty
+compiler:
+- clang
+os:
+- linux
+- osx
+before_script:
+- ./cmake .
+script:
+- ./make leetcode_testcase -j4
+- ./tests/testcase/leetcode_testcase
+branches:
+  only:
+  - master
