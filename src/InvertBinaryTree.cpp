@@ -5,12 +5,13 @@
 #include <cstdio>
 #include "solution/InvertBinaryTree.h"
 
-TreeNode *InvertBinaryTree::invertTree(TreeNode *root) {
-    if (root == NULL) {
+TreeNode* InvertBinaryTree::invertTree(TreeNode* root)
+{
+    if (root==NULL) {
         return root;
     }
-    if (root->left != NULL || root->right != NULL) {
-        TreeNode *tmp = root->left;
+    if (root->left!=NULL || root->right!=NULL) {
+        TreeNode* tmp = root->left;
         root->left = root->right;
         root->right = tmp;
     }

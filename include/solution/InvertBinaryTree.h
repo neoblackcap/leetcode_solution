@@ -4,17 +4,19 @@
 
 #ifndef LEETCODE_INVERTBINARYTREE_H
 #define LEETCODE_INVERTBINARYTREE_H
+
 struct TreeNode {
     int val;
-    TreeNode *left;
-    TreeNode *right;
+    TreeNode* left;
+    TreeNode* right;
 
-    TreeNode(int x) : val(x), left(NULL), right(NULL) { }
+    TreeNode(int x)
+            :val(x), left(NULL), right(NULL) { }
 };
 
 class InvertBinaryTree {
 public:
-    TreeNode *invertTree(TreeNode *root);
+    TreeNode* invertTree(TreeNode* root);
 };
 
 #endif //LEETCODE_INVERTBINARYTREE_H

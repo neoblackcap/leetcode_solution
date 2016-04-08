@@ -2,21 +2,32 @@
 // Created by Neo Ko on 16/4/7.
 //
 #include "solution/MoveZeros.h"
-#include <iostream>
 
-void MoveZeros::moveZeroes(vector<int> &nums) {
-    auto zero_iterator = nums.rbegin();
-    auto non_zero_iterator = nums.rbegin();
-    while (zero_iterator != nums.rend()) {
-        if (*zero_iterator == 0 && non_zero_iterator != nums.rend()) {
-            while (*non_zero_iterator == 0 && non_zero_iterator != nums.rend()) {
-                ++non_zero_iterator;
+void MoveZeros::moveZeroes(vector<int>& nums)
+{
+    vector<int>::reverse_iterator final_zero_iterator = nums.rbegin();
+
+    for (auto zero_iterator = nums.rbegin(); zero_iterator!=nums.rend(); ++zero_iterator) {
+        if (*zero_iterator==0) {
+            for (; final_zero_iterator!=zero_iterator; ++final_zero_iterator) {
+                if (*final_zero_iterator!=0) {
+                    auto it = zero_iterator;
+                    swap(it, final_zero_iterator);
+                    break;
+                }
             }
-
-            nums.insert(non_zero_iterator.base(), 0);
-            nums.erase((++zero_iterator).base());
-            --zero_iterator; // prevent dangling pointer
         }
-        ++zero_iterator;
     }
+}
+
+void MoveZeros::swap(vector<int>::reverse_iterator& end, vector<int>::reverse_iterator& begin)
+{
+    for (; end!=begin; --end) {
+        vector<int>::reverse_iterator before = end-1;
+        if (*before==0) { break; }
+        int tmp = *before;
+        *before = *end;
+        *end = tmp;
+    }
+
 }

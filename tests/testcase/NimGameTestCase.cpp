@@ -5,7 +5,8 @@
 #include "gtest/gtest.h"
 #include "solution/NimGame.h"
 
-TEST(NimGameTestCase, test_solution) {
+TEST(NimGameTestCase, test_solution)
+{
     NimGame* solution = new NimGame();
     bool result1 = solution->canWinNim(4);
     bool result2 = solution->canWinNim(5);

@@ -13,13 +13,15 @@ public:
     vector<int> countBits(int num);
 
 private:
-    int countBitOfInteger(int num, int counting) {
-        if (num <= 1) {
-            counting += num % 2;
+    int countBitOfInteger(int num, int counting)
+    {
+        if (num<=1) {
+            counting += num%2;
             return counting;
-        } else {
-            int reminder = num % 2;
-            if (reminder == 1) { ++counting; }
+        }
+        else {
+            int reminder = num%2;
+            if (reminder==1) { ++counting; }
             counting = this->countBitOfInteger(num >> 1, counting);
             return counting;
         }
@@ -27,6 +29,5 @@ private:
 
     }
 };
-
 
 #endif //LEETCODE_COUNTINGBITS_H
