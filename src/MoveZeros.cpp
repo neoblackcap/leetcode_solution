@@ -5,29 +5,18 @@
 
 void MoveZeros::moveZeroes(vector<int>& nums)
 {
-    vector<int>::reverse_iterator final_zero_iterator = nums.rbegin();
+    int count = 0;
 
-    for (auto zero_iterator = nums.rbegin(); zero_iterator!=nums.rend(); ++zero_iterator) {
-        if (*zero_iterator==0) {
-            for (; final_zero_iterator!=zero_iterator; ++final_zero_iterator) {
-                if (*final_zero_iterator!=0) {
-                    auto it = zero_iterator;
-                    swap(it, final_zero_iterator);
-                    break;
-                }
-            }
+    for (auto it = nums.begin(); it!=nums.end();) {
+        if (*it == 0) {
+            ++count;
+            nums.erase(it);
+            it = nums.begin();
+        } else {
+            ++it;
         }
     }
-}
-
-void MoveZeros::swap(vector<int>::reverse_iterator& end, vector<int>::reverse_iterator& begin)
-{
-    for (; end!=begin; --end) {
-        vector<int>::reverse_iterator before = end-1;
-        if (*before==0) { break; }
-        int tmp = *before;
-        *before = *end;
-        *end = tmp;
+    for (int i = 0; i < count; ++i) {
+        nums.push_back(0);
     }
-
 }

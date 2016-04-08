@@ -40,4 +40,3 @@ TEST(MoveZerosTestCase, test_solution_4)
     solution.moveZeroes(sample);
     EXPECT_EQ(expect_result, sample);
 }
-
