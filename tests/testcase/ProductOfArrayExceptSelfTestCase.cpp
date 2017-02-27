@@ -8,9 +8,9 @@
 using namespace std;
 
 TEST(ProductOfArrayExceptSelfTestCase, test_solution) {
-    ProductOfArrayExceptSelf s;
-    vector<int> sample = {1,2,3,4};
-    vector<int> expect = {24,12,8,6};
-    vector<int> r = s.productExceptSelf(sample);
-    EXPECT_EQ(r, expect);
+  ProductOfArrayExceptSelf s;
+  vector<int> sample = {1, 2, 3, 4};
+  vector<int> expect = {24, 12, 8, 6};
+  vector<int> r = s.productExceptSelf(sample);
+  EXPECT_EQ(r, expect);
 }

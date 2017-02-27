@@ -6,12 +6,11 @@
 #include "solution/SingleNumberIII.h"
 using namespace std;
 
-TEST(SingleNumberIIITestCase, test_solution)
-{
-    SingleNumberIII s;
-    vector<int> sample = {1, 2, 1, 2, 5, 5, 3, 4};
-    vector<int> result;
-    vector<int> expect = {3, 4};
-    result = s.singleNumber(sample);
-    EXPECT_EQ(result, expect);
+TEST(SingleNumberIIITestCase, test_solution) {
+  SingleNumberIII s;
+  vector<int> sample = {1, 2, 1, 2, 5, 5, 3, 4};
+  vector<int> result;
+  vector<int> expect = {3, 4};
+  result = s.singleNumber(sample);
+  EXPECT_EQ(result, expect);
 }

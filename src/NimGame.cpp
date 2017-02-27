@@ -3,7 +3,6 @@
 //
 #include "solution/NimGame.h"
 
-bool NimGame::canWinNim(int n)
-{
-    return n%4!=0;
+bool NimGame::canWinNim(int n) {
+  return n%4!=0;
 };

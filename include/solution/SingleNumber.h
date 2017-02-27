@@ -9,8 +9,8 @@
 using namespace std;
 
 class SingleNumber {
-public:
-    int singleNumber(vector<int>& nums);
+ public:
+  int singleNumber(vector<int> &nums);
 };
 
 #endif //LEETCODE_SINGLENUMBER_H

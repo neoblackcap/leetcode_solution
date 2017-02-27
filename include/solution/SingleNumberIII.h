@@ -10,8 +10,8 @@
 using namespace std;
 
 class SingleNumberIII {
-public:
-    vector<int> singleNumber(vector<int>& nums);
+ public:
+  vector<int> singleNumber(vector<int> &nums);
 };
 
 #endif //LEETCODE_SINGLENUMBERIII_H

@@ -1,4 +1,3 @@
 project(leetcode_test)
 
-add_subdirectory(lib/googletest-1.7.0)
 add_subdirectory(testcase)

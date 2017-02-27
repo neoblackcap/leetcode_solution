@@ -102,3 +102,4 @@ install_manifest.txt
 *.lai
 
 # Executables
+.vscode

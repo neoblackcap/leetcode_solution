@@ -6,8 +6,8 @@
 #define LEETCODE_NIMGAME_H
 
 class NimGame {
-public:
-    bool canWinNim(int n);
+ public:
+  bool canWinNim(int n);
 };
 
 #endif //LEETCODE_NIMGAME_H
