@@ -1,7 +1,7 @@
 //
 // Created by Neo Ko on 16/4/7.
 //
-#include "solution/MoveZeros.h"
+#include "MoveZeros.h"
 
 void MoveZeros::moveZeroes(vector<int> &nums) {
   int count = 0;

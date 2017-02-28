@@ -12,7 +12,7 @@ struct TreeNode {
 
   TreeNode(int x)
       : val(x), left(NULL), right(NULL) { }
-}
+};
 
 struct InvertTreeNode {
   int val;
@@ -21,16 +21,16 @@ struct InvertTreeNode {
 
   InvertTreeNode(int x)
       : val(x), right(NULL), left(NULL) { }
-}
+};
 
 class InvertBinaryTree {
  public:
   TreeNode *invertTree(TreeNode *root);
-}
+};
 
 class InvertBinaryTreeInplace {
   public:
     InvertTreeNode *invertTree(TreeNode *root);
-}
+};
 
 #endif //LEETCODE_INVERTBINARYTREE_H

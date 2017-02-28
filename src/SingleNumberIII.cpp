@@ -2,7 +2,7 @@
 // Created by Neo Ko on 16/4/11.
 //
 
-#include "solution/SingleNumberIII.h"
+#include "SingleNumberIII.h"
 
 vector<int> SingleNumberIII::singleNumber(vector<int> &nums) {
   int num_a = 0, num_b = 0, diff = 0;

@@ -2,7 +2,7 @@
 // Created by Neo Ko on 16/4/11.
 //
 
-#include "solution/ProductOfArrayExceptSelf.h"
+#include "ProductOfArrayExceptSelf.h"
 
 vector<int> ProductOfArrayExceptSelf::productExceptSelf(vector<int> &nums) {
   int product = 1;

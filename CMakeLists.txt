@@ -3,7 +3,8 @@ project(leetcode)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
-add_subdirectory(src)
-add_subdirectory(tests)
+include_directories(include)
 
-target_link_libraries(solution)
+set(SOURCE_FILES src/CountingBits.cpp src/NumberComplement.cpp src/main.cpp)
+
+add_executable(solution ${SOURCE_FILES})
