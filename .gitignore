@@ -103,3 +103,5 @@ install_manifest.txt
 
 # Executables
 .vscode
+
+.cbp
