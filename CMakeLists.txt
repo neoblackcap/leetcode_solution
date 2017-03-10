@@ -10,6 +10,8 @@ set(SOURCE_FILES src/CountingBits.cpp
                  src/main.cpp
                  src/KeyboardRow.cpp
                  src/NextGreaterElementI.cpp
-                 src/ReverseString.cpp)
+                 src/ReverseString.cpp
+                 src/IslandPerimeter.cpp
+        )
 
 add_executable(solution ${SOURCE_FILES})
