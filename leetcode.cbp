@@ -93,6 +93,9 @@
 		<Unit filename="/Users/neo/Workspace/leetcode/src/KeyboardRow.cpp">
 			<Option target="solution"/>
 		</Unit>
+		<Unit filename="/Users/neo/Workspace/leetcode/src/MaxConsecutiveOnes.cpp">
+			<Option target="solution"/>
+		</Unit>
 		<Unit filename="/Users/neo/Workspace/leetcode/src/NextGreaterElementI.cpp">
 			<Option target="solution"/>
 		</Unit>
