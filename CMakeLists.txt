@@ -13,6 +13,8 @@ set(SOURCE_FILES
         src/NextGreaterElementI.cpp
         src/ReverseString.cpp
         src/IslandPerimeter.cpp
-        src/MaxConsecutiveOnes.cpp src/DetectCapital.cpp)
+        src/MaxConsecutiveOnes.cpp
+        src/HammingDistance.cpp
+        src/DetectCapital.cpp)
 
 add_executable(solution ${SOURCE_FILES})

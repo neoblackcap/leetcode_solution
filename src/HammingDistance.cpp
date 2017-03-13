@@ -1,7 +1,6 @@
-#define CATCH_CONFIG_MAIN 
 #include "catch.h"
 
-class Solution {
+class HammingDistanceSolution {
 public:
     int hammingDistance(int x, int y) {
         int z = x ^ y;
@@ -14,7 +13,7 @@ public:
 };
 
 TEST_CASE("Hamming Distance is calculated") {
-    Solution solution;
+    HammingDistanceSolution solution;
     REQUIRE( solution.hammingDistance(1, 4) == 2 );
     REQUIRE( solution.hammingDistance(1, 8) == 2 );
     REQUIRE( solution.hammingDistance(1, 12) == 3 );
